@@ -1,0 +1,212 @@
+/* General Styling */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #1a1a2e;
+    padding: 25px 0;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+}
+
+.logo {
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Nav Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 35px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+    padding: 10px 14px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+    display: block;
+}
+
+.nav-links li a:hover {
+    background-color: #e94560;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 48px;
+    left: 0;
+    background-color: #1a1a2e;
+    padding: 10px 0;
+    border-radius: 5px;
+    min-width: 180px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    flex-direction: column;
+    z-index: 1000;
+}
+
+.dropdown-menu li a {
+    padding: 10px 20px;
+    font-size: 16px;
+    white-space: nowrap;
+}
+
+/* Show Dropdown */
+.dropdown-menu.show {
+    display: flex;
+}
+
+/* Section Styling */
+.full-screen {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    text-align: center;
+}
+
+.content {
+    max-width: 1200px;
+    width: 100%;
+    padding: 20px;
+}
+
+section h1, section h2 {
+    font-size: 36px;
+    color: #1a1a2e;
+    margin-bottom: 20px;
+}
+
+/* Larger Title for Home Section */
+.welcome-title {
+    font-size: 48px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+section p {
+    font-size: 20px;
+    line-height: 1.8;
+}
+
+/* Facilities Styling */
+ul {
+    list-style: none;
+    padding: 0;
+    font-size: 18px;
+    text-align: center;
+}
+
+ul li {
+    padding: 8px 0;
+}
+
+/* Gallery Styling */
+.gallery-images {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.gallery-images img {
+    width: 30%;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.gallery-images img:hover {
+    transform: scale(1.05);
+}
+
+/* Footer Styling */
+footer {
+    background-color: #1a1a2e;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer a {
+    color: #e94560;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Logout Button */
+.logout-btn {
+    background-color: #e94560;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.logout-btn:hover {
+    background-color: #1a1a2e;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .gallery-images {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .gallery-images img {
+        width: 80%;
+    }
+
+    .welcome-title {
+        font-size: 36px;
+    }
+}
